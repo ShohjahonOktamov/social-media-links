@@ -79,10 +79,10 @@ a {
 
 @media (max-width: 600px) {
   a {
-    padding: 15px 30px;
+    padding: 15px 50px;
   }
 
-  .speciality, .place{
+  .speciality{
     font-size: 12px;
   }
 
