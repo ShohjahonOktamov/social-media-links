@@ -13,8 +13,13 @@
   src: url("./assets/fonts/static/Inter-SemiBold.ttf");
 }
 
-body {
+*, 
+*::before, 
+*::after {
   box-sizing: border-box;
+}
+
+body {
   padding: 0;
   margin: 0;
   background-color: hsl(0, 0%, 8%);
