@@ -80,10 +80,10 @@ a {
 
 @media (max-width: 600px) {
   a {
-    padding: 15px 20px;
+    padding: 15px 30px;
   }
 
-  .speciality, .place, .name {
+  .speciality, .place{
     font-size: 12px;
   }
 
