@@ -20,6 +20,7 @@
 }
 
 body {
+  position: relative;
   padding: 0;
   margin: 0;
   background-color: hsl(0, 0%, 8%);
@@ -47,6 +48,7 @@ a:hover {
 }
 
 .speciality {
+  color: red;
   font-family: "inter";
   font-size: 14px;
   margin-top: 25px;
