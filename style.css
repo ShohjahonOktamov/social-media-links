@@ -13,21 +13,21 @@
   src: url("./assets/fonts/static/Inter-SemiBold.ttf");
 }
 
-*, 
-*::before, 
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
   background-color: hsl(0, 0%, 8%);
-  text-align: center;
   color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
-
-
 
 a:hover {
   background-color: hsl(75, 94%, 57%);
@@ -43,10 +43,10 @@ a:hover {
   font-size: 14px;
   font-family: "inter-semibold";
   color: hsl(75, 94%, 57%);
-  ;
 }
 
 .speciality {
+  color: red;
   font-family: "inter";
   font-size: 14px;
   margin-top: 25px;
@@ -59,56 +59,40 @@ a:hover {
   border-radius: 100%;
 }
 
-@media(any-pointer: fine) {
-  #container {
-    margin: 0;
-    padding: 30px;
-    border-radius: 12px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: hsl(0, 0%, 12%);
-  }
-
-  a {
-    display: block;
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 100%);
-    padding: 15px 80px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-family: "inter-semibold";
-    margin-top: 14px;
-    font-size: 14px;
-  }
+#container {
+  padding: 30px;
+  border-radius: 12px;
+  background-color: hsl(0, 0%, 12%);
+  text-align: center;
 }
 
-@media(any-pointer: coarse) {
-  #container {
-    margin: 0;
-    padding: 25px;
-    border-radius: 12px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: hsl(0, 0%, 12%);
-  }
-
-  a {
-    display: block;
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 100%);
-    padding: 15px 70px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-family: "inter-semibold";
-    margin-top: 14px;
-    font-size: 14px;
-  }
+a {
+  display: block;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  padding: 15px 80px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: "inter-semibold";
+  margin-top: 14px;
+  font-size: 14px;
 }
 
+@media (max-width: 600px) {
+  a {
+    padding: 15px 20px;
+  }
 
+  .speciality, .place, .name {
+    font-size: 12px;
+  }
+
+  #container {
+    padding: 20px;
+  }
+
+  #container img {
+    width: 60px;
+    height: 60px;
+  }
+}
