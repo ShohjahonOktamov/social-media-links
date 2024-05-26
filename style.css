@@ -79,15 +79,15 @@ a {
 
 @media (max-width: 600px) {
   a {
-    padding: 15px 70px;
+    padding: 15px 80px;
   }
 
   #container {
-    padding: 25px;
+    padding: 24px;
   }
 
   #container img {
-    width: 90px;
-    height: 90px;
+    width: 88px;
+    height: 88px;
   }
 }
